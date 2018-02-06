@@ -1,0 +1,12 @@
+"Phrases"
+{
+	"Advertisement Message"
+	{
+		"en"	"Type '!donate' in chat to donate today!"
+	}
+
+	"Menu Title"
+	{
+		"en"	"Pick an amount below:"
+	}
+}

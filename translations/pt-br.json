@@ -1,0 +1,94 @@
+{
+        "language" : "pt-br",
+        "steamdown": [
+                {
+                        "msg1": "A Comunidade Steam atualmente está offline",
+                        "msg2": "Não foi possível obter a sua Steam ID com base no que você digitou.",
+                        "msg3": "Por favor, digite sua Steam ID no formato: STEAM_0:0:00000 ou aguarde até a Steam voltar a ficar online",
+                        "msg4": "Desculpe, mas não foi possível de obter a sua Steam ID.",
+                        "msg5": "Você provavelmente digitou uma Steam ID inválida",
+                        "msg6": "Certifique-se que você digitou uma Steam ID válida e tente novamente."
+                }
+        ],
+
+        "misc":[
+                {
+                        "msg1" : "Clique aqui para voltar",
+                        "msg2" : "Cor do Chat",
+                        "msg3" : "Cor do Nome"
+                }
+        ],
+        "donate":[
+                {        
+                        "msg1" : "DOAR!",
+                        "msg2" : "Bem-vindo(a) de volta %s seus perks atuais de doador expiram em",
+                        "msg3" : "Desculpe, a doação mínima que pode ser processada é de $5. Por favor, altere o valor",
+                        "msg4" : "Por favor, certifique-se este é você!",
+                        "msg5" : "Você deseja doar $%s. Por sua generosidade você receberá %s dias de regalias de doador",
+                        "msg6" : "do nível %s",
+                        "msg7" : "Começando em %s e com término em %s",
+                        "msg8" : "Por favor, escolha as cores da Tag e Nome que você gostaria de usar no seu Chat do jogo.",
+                        "msg9" : "Se este é você, e você concorda, por favor clique no link abaixo para prosseguir com a sua doação, você será redirecionado para o PayPal para processar a sua contribuição."
+                }
+        ],
+        "admin":[{
+                "home" : "Home",
+                "manualentry" : "Entrada Manual",
+                "serverquery" : "Enviar Consulta",
+                "actionlog" : "Logs de Ações",
+                "errorlog" : "Logs de Erros",
+                "logout" : "Sair",
+                "title" : "Lista de Doadores",
+                "steamname" : "Nome Steam",
+                "steamid" : "Steam ID",
+                "info" : "Informações",
+                "sud" : "Data do Registro",
+                "email" : "Email",
+                "rd" : "Data de Renovação",
+                "current" : "Atual",
+                "total" : "Total",
+                "ed" : "Data do Vencimento",
+                "tier" : "Tier",
+                "notes" : "Notas",
+                "steamlink" : "Steam Link",
+                "edituser" : "Editar Usuário",
+                "delete" : "Deletar",
+                "searchmsg" : "Procurar por Nome, Steam ID, ou Email",
+                "hide" : "Ocultar Expiradas",
+                "show" : "Mostrar Expiradas",
+                "clear" : "Limpar",
+                "perkson" : "Com Perks",
+                "perksoff" : "Sem Perks",
+                "resetfields" : "Resetar Campos",
+                "perksactivated" : "Com Perks",
+                "addperks" : "Sem Perks",
+                "perksoff" : "Sem Perks",
+                "noperks" : "Sem Perks",
+                "snotes" : "Quaisquer nota especial aqui...",
+                "delconf" : "Tem certeza de que deseja excluir este usuário, e removê-lo do banco de dado?  Isto é permanente e não pode ser desfeito!",
+                "semail" : "nome@dominio.com",
+                "sq" : "Enviar Consulta",
+                "sq1" : "Sobre esta ferramenta",
+                "sq2" : "Esta ferramenta irá enviar um comando que você especificar para todos os servidores de jogos que estejam no SourceBans.",
+                "sq3" : "Não há limites para o comando que você pode enviar. Portanto, tenha cuidado.",
+                "sq4" : "Ocorreu um error ao enviar a consulta aos servidores"
+                }],
+        "sysmsg":[{
+                "successedit" : "%s editado(a) com sucesso.",
+                "failrehash" : "Falha no rehash do Servidor",
+                "succrehash" : "Todos os servidores foram rehashed.",
+                "updatefail" : "FALHA AO ATUALIZAR O USUÁRIO.",
+                "successenter" : "%s adicionado(a) com sucesso.",
+                "deleted" : "A Steam ID %s foi removida completamente do sistema."
+                }],
+        "logmsg":[{
+                "manualentry" : "%s adicionou manualmente %s.",
+                "edit" : "%s editou %s.",
+                "nuclear" : "%s enviou o comando %s para todos os servidores.",
+                "deleted" : "%s deletou %s."
+                }],
+        "error" :[{
+                "msg1" : "Houve um problema ao remover %s do SourceBans."
+                }]
+                
+}

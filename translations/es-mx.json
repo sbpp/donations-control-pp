@@ -1,0 +1,93 @@
+{
+           "checker" : "http://jsonlint.com/",
+        "language" : "es-mx",
+        "steamdown": [
+                {
+                        "msg1": "La comunidad Steam se encuentra fuera de línea",
+                        "msg2": "No podemos obtener el ID según la información que usted ha introducido.",
+                        "msg3": "Por favor introduzca su STEAM:0:0:00000 ID o espere a que la comunidad Steam se restablezca",
+                        "msg4" : "Los sentimos no podemos obtener su Steam ID.",
+                        "msg5": "Seguramente has introducido incorrectamente el Steam ID",
+                        "msg6": "Por favor verifique que la información introducida sea un Steam ID valido e intente de nuevo."
+                }
+        ],
+ 
+        "misc":[
+                {
+                        "msg1" : "Haga click aquí para regresar",
+                        "msg2" : "Color para el Chat ",
+                        "msg3" : "Color para el Nombre"
+                }
+        ],
+        "donate":[
+                {       
+                        "msg1" : "DONAR!",
+                        "msg2" : "Bienvenido de nuevo %s tus beneficios espiran él",
+                        "msg3" : "Lo sentimos, el mínimo requerido para donar debe de ser de 5$ (USD). Corrija su monto",
+                        "msg4" : "Por favor verifique que sea usted!",
+                        "msg5" : "Usted desea donar %s$. Por su generosidad, usted recibirá %s días de beneficios ",
+                        "msg6" : "en calidad de %s ",
+                        "msg7" : "Comenzando el día %s y terminando el día %s",
+                        "msg8" : "Por favor seleccione los colores de su tag, que usted desea usar dentro del chat del juego.",
+                        "msg9" : "Si es usted, y está de acuerdo presione el botón para proceder con la donación, usted será re direccionado a Paypal para completar el pago ."
+                }
+        ],
+        "admin":[{
+                "home" : "Inicio",
+                "manualentry" : "Entrada manual",
+                "serverquery" : "Consultar al servidor",
+                "actionlog" : "Action Logs",
+                "errorlog" : "Error Logs",
+                "logout" : "Cerrar Sesión",
+                "title" : "Lista de colaborares",
+                "steamname" : "Nombre en Steam ",
+                "steamid" : "Steam ID",
+                "info" : "Información",
+                "sud" : "Ingresar la fecha",
+                "email" : "email",
+                "rd" : "Renovar la fecha",
+                "current" : "Actualmente",
+                "total" : "Total",
+                "ed" : "Fecha de expiración",
+                "tier" : "Tipo de colaborador",
+                "notes" : "Notas",
+                "steamlink" : "Steam Link",
+                "edituser" : "Editar Usuario",
+                "searchmsg" : "Buscar por nombre, SteamID, o Email",
+                "hide" : "Ocultar cuando expira",
+                "show" : "Mostrar cuando expira",
+                "clear" : "Limpiar",
+                "perkson" : "Beneficios activados",
+                "perksoff" : "Beneficios desactivados",
+                "perksactivated" : "Los beneficios han sido activados",
+                "addperks" : "Agregar beneficios",
+                "perksoff" : "Beneficios desactivados",
+                "noperks" : "No hay beneficios",
+                "snotes" : "Alguna nota especial agregarla aquí",
+                "delconf" : "Estas seguro que deseas borrar este usuario, y removerlo completamente de las bases de datos?  El proceso eliminara la información permanente y no podrá ser recuperado!",
+                "semail" : "name@domain.com",
+                "sq" : "Consulta al servidor",
+                "sq1" : "Acerca de esta herramienta",
+                "sq3" : "No hay limitaciones de comandos. Sea cuidadoso.",
+                "sq2" : "Está herramienta enviara el comando a todos los servidores conectados con SourceBans.",
+                "sq4" : "Algo falló al consultar los servidores"
+                }],
+        "sysmsg":[{
+                "successedit" : "%s ha sido editado correctamente.",
+                "failrehash" : "La reescritura en el servidor ha fallado.",
+                "succrehash" : "Reescribiendo en todos los servidores",
+                "updatefail" : "FALLA AL ACTUALIZAR EL USUARIO.",
+                "successenter" : "%s ingresado satisfactoriamente.",
+                "deleted" : "Steam ID %s fue removido satisfactoriamente del sistema."
+                }],
+        "logmsg":[{
+                "manualentry" : "%s fue ingresado manualmente %s.",
+                "edit" : "%s editado %s.",
+                "nuclear" : "%s envió el comando %s a todos los servidores.",
+                "deleted" : "%s ha sido eliminado %s."
+                }],
+        "error" :[{
+                "msg1" : "Ha habido un problema eliminando %s de la base de datos de sourcebans."
+                }]
+               
+}

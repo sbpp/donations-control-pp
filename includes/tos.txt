@@ -1,0 +1,5 @@
+This is the Terms of service/Terms and conditions file.
+Only put raw text in here.
+If you do not want this displayed on donate.php simply delete it.
+the file location is includes/tos.txt
+                            <3 1911

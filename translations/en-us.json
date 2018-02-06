@@ -1,0 +1,103 @@
+{
+    "checker": "http://jsonlint.com/",
+    "language": "en-us",
+    "steamdown": [
+        {
+            "msg1": "The Steam Community is currently down",
+            "msg2": "We were unable to get your ID based on what you entered.",
+            "msg3": "Please enter your STEAM:0:0:00000 ID or wait untill Steam comes back online",
+            "msg4": "Sorry we were unable to get your Steam ID.",
+            "msg5": "You probably entered an incorrect Steam ID",
+            "msg6": "Please check and make sure you entered a valid Steam ID and try again."
+        }
+    ],
+    "misc": [
+        {
+            "msg1": "Click here to go back",
+            "msg2": "Chat Color",
+            "msg3": "Name Color"
+        }
+    ],
+    "donate": [
+        {
+            "msg1": "DONATE!",
+            "msg2": "Welcome back %s your current donor perks expire on",
+            "msg3": "Sorry, the minimum donation that can be processed is $%s. Please adjust accordingly.",
+            "msg4": "Please make sure this is you!",
+            "msg5": "You wish to donate $%s. For your generosity, you will receive %s days of perks",
+            "msg6": "on the %s level",
+            "msg7": "Beginning on %s and ending on %s",
+            "msg7a": "your perks will be extended until %s",
+            "msg8": "Please select the colors and tag you would like to use for your in-game chat.",
+            "msg9": "If this is you, and you agree please click below, to proceed with your donation, you will be redirected to PayPal to process your contribution.",
+            "msg10": "I understand that I am chaning my level from %s to %s",
+            "changePerks": "It appears you are trying to change your perks from %s level to %s level, your expiration date has be prorated. If this is not your intent, please go back and try again.",
+            "downgrade": "It appears you are trying to downgrade your perks from %s level to %s level. If this is your intent, your expiration date will be recalculated retroactively at the %s rate, otherwise please go back and try again.",
+            "acceptTos": "I accept the Terms and conditions"
+        }
+    ],
+    "admin": [{
+            "home": "Home",
+            "manualentry": "Manual Entry",
+            "serverquery": "Query Servers",
+            "logs": "Logs",
+            "actionlog": "Action Logs",
+            "errorlog": "Error Logs",
+            "logout": "Log Out",
+            "title": "Donor List",
+            "steamname": "Steam Name",
+            "steamid": "Steam ID",
+            "info": "info",
+            "sud": "Sign up Date",
+            "email": "email",
+            "rd": "Renewal Date",
+            "current": "Current",
+            "total": "Total",
+            "ed": "Expiration Date",
+            "tier": "Tier",
+            "notes": "Notes",
+            "steamlink": "Steam Link",
+            "edituser": "Edit User",
+            "searchmsg": "Search for Name, SteamID, or Email",
+            "hide": "Hide Expired",
+            "show": "Show Expired",
+            "close": "Close Window",
+            "newUser": "New Donor",
+            "clear": "Clear",
+            "perkson": "Perks On",
+            "perksoff": "Perks Off",
+            "perksactivated": "Perks Activated",
+            "addperks": "Add Perks",
+            "perksoff": "Perks off",
+            "noperks": "No Perks",
+            "snotes": "Any special notes here",
+            "delconf": "Are you sure you want to delete this user, and remove them from all databases?  This is permanent and cant be un-done!",
+            "semail": "name@domain.com",
+            "sq": "Server Query",
+            "group": "Group",
+            "status": "Status",
+            "sq1": "About this tool",
+            "sq3": "There are no limitations to the command you can send. So be careful.",
+            "sq2": "This tool will send the command you specify to all of the game servers you have connected to SourceBans.",
+            "sq4": "Something went wrong querying the servers"
+        }],
+    "sysmsg": [{
+            "successedit": "%s edited successfully.",
+            "failrehash": "Server rehash failed.",
+            "succrehash": "Rehashed all servers",
+            "updatefail": "FAILED TO UPDATE USER.",
+            "successenter": "%s entered successfully.",
+            "deleted": "Steam ID %s has been removed completly from the system."
+        }],
+    "logmsg": [{
+            "manualentry": "%s manually entered %s.",
+            "edit": "%s edited %s.",
+            "nuclear": "%s sent command %s to all servers.",
+            "deleted": "%s deleted %s."
+        }],
+    "error": [{
+            "msg1": "There was a problem removing %s from sourcebans.",
+            "msg2": "Please fill out the %s field."
+        }]
+
+}

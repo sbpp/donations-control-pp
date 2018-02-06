@@ -1,0 +1,298 @@
+*{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body{
+    //background-color: white;
+    height:auto;
+    min-height:100%;
+    background-image: url('../images/bg1.jpg');
+    background-repeat: repeat;
+    margin-bottom:50px;
+}
+/*fieldset{background-color: white;
+         border: none;
+         border-radius: 10px;}*/
+
+.dateReminder{ background-color: white;
+               border: 3px solid black;
+               padding: 10px 10px 10px 10px;
+               border-radius: 10px;
+               position: relative;
+               margin-left: auto;
+               margin-right: auto;}
+
+.content{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.rconCtrls{
+    display: inline-block;
+}
+
+#rconOutput{
+    width:100%;
+    height:400px;
+    background-color: black;
+    color: #c3cd00;
+}
+#rconCombo,#rconCombo option{
+    color:black;
+}
+.error{
+    position: absolute;
+    width: 20%;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    z-index: 99;
+    top: 20px;
+    color: red;
+    padding: 10px;
+    background-color: white;
+    border:3px solid black;
+    border-radius: 10px;
+}
+.success{
+    position: absolute;
+    width: 20%;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    z-index: 99;
+    top: 20px;
+    color: green;
+    padding: 10px;
+    background-color: white;
+    border:3px solid black;
+    border-radius: 10px;
+}
+
+.nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after{
+    display:none;
+}
+
+.gradientPanel{
+    background: rgb(36,36,36);
+    background: -moz-linear-gradient(top,  rgba(36,36,36,1) 0%, rgba(81,81,81,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(36,36,36,1)), color-stop(100%,rgba(81,81,81,1)));
+    background: -webkit-linear-gradient(top,  rgba(36,36,36,1) 0%,rgba(81,81,81,1) 100%);
+    background: -o-linear-gradient(top,  rgba(36,36,36,1) 0%,rgba(81,81,81,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(36,36,36,1) 0%,rgba(81,81,81,1) 100%);
+    background: linear-gradient(to bottom,  rgba(36,36,36,1) 0%,rgba(81,81,81,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#515151',GradientType=0 );
+
+}
+.gradientPHeading{
+    background: rgb(245,246,246);
+    background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(21%,rgba(219,220,226,1)), color-stop(49%,rgba(184,186,198,1)), color-stop(80%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1)));
+    background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
+    background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
+    background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 );
+
+}
+.gradientPHeading h4{
+    padding:10px;
+}
+.panel-small{
+    background-color: #666;
+    color:white;
+}
+@media (min-width: 1200px) {
+    .panel-small{
+        width: 20%;
+    }
+}
+@media (max-width: 1199px) {
+    .panel-small{
+        width: 48%;
+    }
+}
+.input-group-addon{
+    background-color: #333;
+    color:white;
+}
+.form-control, .form-control[readonly]{
+    background-color: #333;
+    color:white;
+}
+.btn-default{
+    background-color: #999;
+}
+
+@media (max-width:768px) {
+    .hide-mobile{
+        display:none;
+    }
+}
+
+.pointer{
+    cursor:pointer;
+}
+
+.glyphicon-info-sign{
+    cursor:help;
+}
+.glyphicon-cog{
+    margin-left: 5px;
+    color: #333;
+}
+.groupList{}
+
+@media (min-width: 768px) {
+    .groups-panel{
+        width:30%;
+        float:right;
+        margin-right: 10px;
+        display:block;
+    }
+    .half-width{
+        width:49%;
+    }
+    .groupList{
+        width:49%;
+        position: relative;
+        float: left;
+    }
+}
+@media (max-width: 767px) {
+    .groups-panel{
+        width:100%;
+        display:block;
+    }
+    .half-width{
+        width:100%;
+    }
+    .groupList{
+        width:100%;
+    }
+}
+
+/* DONOR LIST */
+.user{
+    display: inline-block;
+    padding: 1%;
+    margin-bottom: -30px;
+}
+
+/*@media (min-width: 1200px) {
+    .user{
+        width: 50%;
+    }
+}
+*/
+@media (min-width: 1650px) {
+    .user{
+        width: 20%;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1649px) {
+    .user{
+        width: 30%;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+    .user{
+        width: 45%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+    .user{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+}
+
+.infName{
+    list-style-type:none;
+    font-size: 1.5em;
+    background-color:white;
+}
+
+.user-info{
+    list-style-type: none;
+    background-color:white;
+    padding:5px 10px;
+    border-bottom:1px solid #999;
+}
+
+.user-info:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.inline{
+    display: inline-block;
+}
+
+.green{
+    color:green;
+}
+.red{
+    color:red;
+}
+.yellow{
+    color:yellow;
+}
+
+.do-nut p,.history-chart-container p {
+    color:white;
+    font-size:2em;
+}
+@media (min-width: 1650px) {
+    .history-chart-container{
+        display:block;
+        float:left;
+        width:60%;
+
+    }
+    .do-nut{
+        display:block;
+        float: left;
+        width:20%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 1660px) {
+
+    .history-chart-container{
+        display:block;
+        width:100%;
+
+    }
+    .do-nut{
+        display:block;
+        width:50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+.promo-panel{
+    background-color: #666;
+}
+
+.editUser, .newUser, .editPromo{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top:50px;
+}

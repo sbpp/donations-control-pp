@@ -1,0 +1,92 @@
+{
+	"language" : "1337",
+	"steamdown": [
+		{
+			"msg1": "7eH 57eaM k0MMuN17y 12 KurReN7lY D0wn",
+			"msg2": "w3 W3R3 uN48L3 70 937 j00r 1d 8453D 0n Wh@ J00 3N73r3D.",
+			"msg3": "pL332 3N73r ur STEAM:0:0:00000 ID 0R W417 uN71Ll 5734m k0M32 84ck 0nL1n3",
+			"msg4" : "Sorry we were unable to get your Steam ID.",
+			"msg5": "5OrrY W3 w3r3 UnABl3 tO 93t JOor 5t3am id.",
+			"msg6": "pl3423 CH3cK 4nd M4K3 5ur3 j00 3NT3r3d 4 V4l1d 5t34m 1D 4Nd trY 4941n."
+		}
+	],
+
+	"misc":[
+		{
+			"msg1" : "cLicK H3R3 70 90 84cK",
+			"msg2" : "CH@ kOLoR",
+			"msg3" : "Nam3 kolor"
+		}
+	],
+	"donate":[
+		{	
+			"msg1" : "dOn473!",
+			"msg2" : "W3lC0m3 84CK %s j00R kuRR3nt D0N0r P3Rk2 3XP1r3 0n",
+			"msg3" : "50rRy, 7H3 m1N1MuM D0Na710N 7h@ CAn 83 Pr0c3553D 15 $5. Pl33Z ADjU57 AcC0RD1Ngly",
+			"msg4" : "pl332 M4k3 5ur3 thI2 I2 J00!",
+			"msg5" : "u W1sh 70 D0n47e $%s. pH0R Ur GeNEr0S17y, u w1Ll recE1ve %s d4Y2 0F d0N0R perx",
+			"msg6" : "0n 73H %s L3v3L",
+			"msg7" : "83G1NN1N' 0n %s 4nD 3ND1n' 0N %s",
+			"msg8" : "pLE45E 5ELeC7 7EH cOLoR2 4Nd 749 JoO wouLD l1ke 7o u5E phor jOOr 1n-94me ch47.",
+			"msg9" : "1f 7H12 12 j00, 4nD j00 49R33 pl332 CL1cK 83L0w, 70 PR0C33D W17 j00r d0n4710n, J00 w1lL 83 r3d1R3c73D 70 P4yP4L 70 Pr0C355 J00r K0n7R18u710n."
+		}
+	],
+	"admin":[{
+		"home" : "H0m3",
+		"manualentry" : "M4nU4L EN7RY",
+		"serverquery" : "kw3Ry 53Rv3r5",
+		"actionlog" : "4c710N L0gz",
+		"errorlog" : "3rR0r L095",
+		"logout" : "l0G 0u7",
+		"title" : "d0N0R lI5t",
+		"steamname" : "573am NaM3",
+		"steamid" : "5T34m 1D",
+		"info" : "1nF0",
+		"sud" : "519N up DA73",
+		"email" : "3m4IL",
+		"rd" : "R3N3w4L d473",
+		"current" : "CuRR3NT",
+		"total" : "7074L",
+		"ed" : "3XP1r4710n D473",
+		"tier" : "t13R",
+		"notes" : "NO732",
+		"steamlink" : "5T34M l1nk",
+		"edituser" : "3D17 US3r",
+		"searchmsg" : "534rCH F0r n4M3, 5734M1d, 0r 3m41l",
+		"hide" : "h1D3 3xp1R3d",
+		"show" : "5H0W Exp1rEd",
+		"clear" : "cL34r",
+		"perkson" : "PERX 0N",
+		"perksoff" : "pErk5 0FF",
+		"perksactivated" : "pErX 4c7iV47Ed",
+		"addperks" : "4dD P3rx",
+		"perksoff" : "PERX 0ff",
+		"noperks" : "n0 pErx",
+		"snotes" : "4NY sP3c14L n0732 h3R3",
+		"delconf" : "r j00 5Ure j00 w4Nt t0 DElEte thi2 u5er, 4nd REM0vE tHeM pHr0m 4lL d4T4845E2?  tHI2 I2 pERm4neNT 4Nd k4nT 8E UN-D0NE!",
+		"semail" : "N4m3@d0M41n.K0M",
+		"sq" : "s3Rv3r kW3Ry",
+		"sq1" : "480U7 7H1s 700l",
+		"sq3" : "7H3R3 R n0 l1m174710n2 70 73h K0mM4nd u K4N 53nd. 50 83 K4r3FUL.",
+		"sq2" : "7h12 700l W1Ll 53ND 7h3 C0Mm4nD J00 5P3c1fY 70 4Ll 0f 7h3 94M3 53rV3r2 j00 H4V3 c0NN3c73d 70 50urC3B4N2.",
+		"sq4" : "50M37H1n' w3n7 Wr0ng Kw3RY1N' 73h 53rV3R2"
+		}],
+	"sysmsg":[{
+		"successedit" : "%s 3D1t3d SUCc3ssFULlY.",
+		"failrehash" : "5ervER ReHa5H Fa1led.",
+		"succrehash" : "r3hA5h3D ALl 53Rv3r5",
+		"updatefail" : "FAILED TO UPDATE USER.",
+		"successenter" : "%s eN7ErED 5UcCE55fuLLy.",
+		"deleted" : "s734M 1d %s h42 833n r3M0v3d K0mPL37ly PHR0M 73H SyS73m."
+		}],
+	"logmsg":[{
+		"manualentry" : "%s mANuAlLY En7EREd %s.",
+		"edit" : "%s 3D173D %s.",
+		"nuclear" : "%s 53n7 K0Mm4Nd %s 70 4LL 53Rv3R2.",
+		"deleted" : "%s D3l3T3D %s."
+		}],
+	"error" :[{
+		"msg1" : "7h3R3 W45 4 pr08l3m R3m0V1N' %s fR0M 50uRC384n5."
+		}]
+		
+}

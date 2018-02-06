@@ -1,0 +1,32 @@
+1407725231
+{
+	"response": {
+		"players": [
+			{
+				"steamid": "76561198068199194",
+				"communityvisibilitystate": 3,
+				"profilestate": 1,
+				"personaname": "Nick [FF-A] | Busy",
+				"lastlogoff": 1407675831,
+				"commentpermission": 1,
+				"profileurl": "http://steamcommunity.com/id/RTWNick/",
+				"avatar": "http://media.steampowered.com/steamcommunity/public/images/avatars/7e/7ea1f83825d7827f06b1e04540dc9356e7c7c6d9.jpg",
+				"avatarmedium": "http://media.steampowered.com/steamcommunity/public/images/avatars/7e/7ea1f83825d7827f06b1e04540dc9356e7c7c6d9_medium.jpg",
+				"avatarfull": "http://media.steampowered.com/steamcommunity/public/images/avatars/7e/7ea1f83825d7827f06b1e04540dc9356e7c7c6d9_full.jpg",
+				"personastate": 1,
+				"realname": "Nick",
+				"primaryclanid": "103582791430324812",
+				"timecreated": 1343457819,
+				"personastateflags": 0,
+				"gameserverip": "74.91.119.154:27015",
+				"gameserversteamid": "85568392920039972",
+				"gameextrainfo": "Team Fortress 2",
+				"gameid": "440",
+				"loccountrycode": "US",
+				"locstatecode": "WA",
+				"loccityid": 4030
+			}
+		]
+		
+	}
+}
