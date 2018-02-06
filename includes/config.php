@@ -52,7 +52,6 @@ define('SB_SV_PASS', 'password2strong');       //MySQL password ONLY NEEDED IF S
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 define('SOURCEBANS_DB', 'sourcebans'); // sourcebans database, this is needed.
 define('SB_PREFIX', 'sb'); //Sourcebans database prefix. Only change this value if you changed your database prefix when setting up SourceBans.
-define('SB_SALT', 'SourceBans'); //dont change this unless you changed your salt in sourcebans (if you dont know what salt is, you didnt change it)
 define('SB_ADMINS', 'Administrators'); //name of admin group in sourcebans which has access to the donor panel
 ///////////////////////////////////////////////////////////////////////////////////////////
 
