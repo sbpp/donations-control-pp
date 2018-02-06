@@ -5,7 +5,6 @@ if (isset($_POST['loginSubmit'])) {
     require_once ABSDIR . 'includes/LoggerClass.php';
     $log = new log;
     $user_name = $_POST['user_name'];
-    $password = sha1(sha1(SB_SALT . $_POST['password']));
 
     try {
         $db = new PDO('mysql:host=' . DB_HOST . ';dbname=' . SOURCEBANS_DB . ';charset=utf8', DB_USER, DB_PASS);
@@ -16,15 +15,14 @@ if (isset($_POST['loginSubmit'])) {
     }
 
     try {
-        $stmt = $db->prepare("SELECT * FROM " . SB_PREFIX . "_admins WHERE user=? and password=? and srv_group = '" . SB_ADMINS . "';");
-        $stmt->execute(array($user_name, $password));
+        $stmt = $db->prepare("SELECT * FROM " . SB_PREFIX . "_admins WHERE user=? and srv_group = '" . SB_ADMINS . "';");
+        $stmt->execute(array($user_name));
         $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (Exception $e) {
         echo "<h3>Something went wrong with our system.</h3>";
         $log->logError($ex->getMessage(), $ex->getFile(), $ex->getLine());
     }
-    $count = count($row);
-    if ($count === 1) {
+    if (password_verify($row[0]['password'], $_POST['password'])) {
         $email = $row[0]['email'];
         session_start();
         $_SESSION['username'] = $user_name;
@@ -78,7 +76,6 @@ if (isset($_POST['loginSubmit'])) {
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td><input type="submit" name="loginSubmit" value="Login" form='loginSubmit' /><input type='button' id='hideLogin' value='Cancel' /></td>
-
                     </tr>
                 </table>
             </td>
@@ -86,4 +83,3 @@ if (isset($_POST['loginSubmit'])) {
         </tr>
     </table>
 </div>
-
