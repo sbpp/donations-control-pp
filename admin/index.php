@@ -22,7 +22,7 @@ if (isset($_POST['loginSubmit'])) {
         echo "<h3>Something went wrong with our system.</h3>";
         $log->logError($ex->getMessage(), $ex->getFile(), $ex->getLine());
     }
-    if (password_verify($row[0]['password'], $_POST['password'])) {
+    if (password_verify($_POST['password'], $row[0]['password'])) {
         $email = $row[0]['email'];
         session_start();
         $_SESSION['username'] = $user_name;
