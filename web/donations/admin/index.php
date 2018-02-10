@@ -1,34 +1,33 @@
 <?php
+define('NINETEENELEVEN', true);
+require_once '../includes/config.php';
 if (isset($_POST['loginSubmit'])) {
-    define('NineteenEleven', TRUE);
-    require_once '../includes/config.php';
     require_once ABSDIR . 'includes/LoggerClass.php';
-    $log = new log;
-    $user_name = $_POST['user_name'];
+    $log = new log();
 
-    try {
-        $db = new PDO('mysql:host=' . DB_HOST . ';dbname=' . SOURCEBANS_DB . ';charset=utf8', DB_USER, DB_PASS);
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-    } catch (Exception $e) {
-        die('Unable to open connection to MySQL server.');
-    }
+    $_POST['username'] = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
+    $_POST['password'] = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
-    try {
-        $stmt = $db->prepare("SELECT * FROM " . SB_PREFIX . "_admins WHERE user=? and srv_group = '" . SB_ADMINS . "';");
-        $stmt->execute(array($user_name));
-        $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    } catch (Exception $e) {
-        echo "<h3>Something went wrong with our system.</h3>";
-        $log->logError($ex->getMessage(), $ex->getFile(), $ex->getLine());
-    }
-    if (password_verify($_POST['password'], $row[0]['password'])) {
-        $email = $row[0]['email'];
+    $db = new Database(DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASS, DB_PREFIX);
+    $db->query("SELECT password, email, authid FROM `:prefix_admins` WHERE user = :user AND srv_group = :group");
+    $db->bind(':user', $_POST['username']);
+    $db->bind(':group', SB_ADMINS);
+    $admin = $db->single();
+
+    if (password_verify($_POST['password'], $admin['password'])) {
         session_start();
-        $_SESSION['username'] = $user_name;
-        $_SESSION['email'] = $email;
-        $_SESSION['table'] = false;
-        ini_set('default_socket_timeout', 10);
+        header("refresh:2;url=show_donations.php");
+        $_SESSION = [
+            'username' => $_POST['username'],
+            'email' => $admin['email'],
+            'authid' => $admin['authid'],
+            'table' => false
+        ];
+        Template::render('ui.success', ['message' => 'Welcome back '.$_POST['username']]);
+        $log->logAction($_POST['username']." logged in from " . $_SERVER['REMOTE_ADDR']);
+        exit();
+
+        /*
         $json = @json_decode(@file_get_contents('http://1911.expert/dc-version/version.php'));
 
         if (!empty($json) && VERSION_NEW != $json->version) {
@@ -39,47 +38,11 @@ if (isset($_POST['loginSubmit'])) {
                 $_SESSION['message'] .= $json->msg;
             }
             $_SESSION['message'] .= "</div>";
-        }
-        print("<center><h1 class = 'success'> Welcome back $user_name </h1></center>");
-        $log->logAction("$user_name logged in from " . $_SERVER['REMOTE_ADDR']);
-        print("<script type = 'text/javascript'> setTimeout('reload()', 1000)
-                function reload(){
-                window.location = 'show_donations.php'
-                }</script>");
-        exit();
-    } else {
-        print "<center><h1 class='error'>Wrong Username or Password</h1></center>";
-        $log->logAction("Failed login attempt for user name: $user_name from " . $_SERVER['REMOTE_ADDR']);
+        }*/
     }
+
+    Template::render('ui.error', ['message' => 'Wrong Username or Password']);
+    $log->logAction("Failed login attempt for user name: ".$_POST['username']." from " . $_SERVER['REMOTE_ADDR']);
 }
-?>
-<div id='login'>
-    <table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
-        <tr>
-        <form id="loginSubmit" method="POST" action="index.php">
-            <td>
-                <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
-                    <tr>
-                        <td colspan="3"><strong>Admin Login </strong></td>
-                    </tr>
-                    <tr>
-                        <td width="78">Username</td>
-                        <td width="6">:</td>
-                        <td width="294"><input name="user_name" type="text" id="user_name"></td>
-                    </tr>
-                    <tr>
-                        <td>Password</td>
-                        <td>:</td>
-                        <td><input name="password" type="password" id="password"></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td><input type="submit" name="loginSubmit" value="Login" form='loginSubmit' /><input type='button' id='hideLogin' value='Cancel' /></td>
-                    </tr>
-                </table>
-            </td>
-        </form>
-        </tr>
-    </table>
-</div>
+
+Template::render('admin.index');

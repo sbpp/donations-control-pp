@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('NineteenEleven')) {
+if (!defined('NINETEENELEVEN')) {
     die('Direct access not premitted');
 }
 if (!defined('ABSDIR')) {

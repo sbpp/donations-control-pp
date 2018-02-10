@@ -4,7 +4,7 @@
  * http://nineteeneleven.info
  * if you find this helpful please consider donating.
  */
-if (!defined('NineteenEleven')) {
+if (!defined('NINETEENELEVEN')) {
     die('Direct access not premitted');
 }
 //Fill in your preferences, and information
@@ -101,8 +101,6 @@ $availableLanguages = array('en-us' => 'English', '1337' => '1337 5pEek', 'pt-br
 define("STATS", true); //enable stats reporting
 
 
-
-
 /*
  * dont edit this stuff
  */
@@ -115,12 +113,25 @@ if (SB_DB) {
     define('SB_USER', DB_USER);
     define('SB_PASS', DB_PASS);
 }
+define('IN_SB', true);
 define('VERSION', '3.1.0'); //unused
 define('ABSDIR', substr(__DIR__, 0, stripos(__DIR__, 'includes')));
+define('SBPP', ABSDIR.'../');
 define('DEBUG', false);
 set_exception_handler('exception_handler');
 
+require_once SBPP.'config.php';
+require_once SBPP.'includes/Database.php';
+
 require_once ABSDIR . 'includes/version.php';
+require_once ABSDIR.'includes/Mustache/Autoloader.php';
+Mustache_Autoloader::register();
+require_once ABSDIR.'includes/Template.php';
+
+Template::init([
+    'cache' => ABSDIR.'cache',
+    'loader' => new Mustache_Loader_FilesystemLoader(ABSDIR.'/templates')
+]);
 
 function exception_handler($ex) {
     require_once ABSDIR . "includes/LoggerClass.php";
