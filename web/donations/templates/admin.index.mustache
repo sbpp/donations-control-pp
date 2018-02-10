@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Kube CSS -->
+    <link rel="stylesheet" href="../assets/css/kube.min.css">
+
+</head>
+<body>
+    <div class="row align-center" style="padding-top: 10rem">
+        <div class="col col-3">
+            <form method="POST" action="index.php" class="form">
+                <fieldset>
+                    <legend>Login</legend>
+                    <div class="form-item">
+                        <label>Username</label>
+                        <input type="text" name="username" class="w50" placeholder="Username">
+                    </div>
+                    <div class="form-item">
+                        <label>Password</label>
+                        <input type="password" name="password" class="w50" placeholder="Password">
+                    </div>
+                    <button name="loginSubmit" type="submit">Log in</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <!-- Kube JS + jQuery are used for some functionality, but are not required for the basic setup -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../assets/js/kube.min.js"></script>
+</body>
+</html>
