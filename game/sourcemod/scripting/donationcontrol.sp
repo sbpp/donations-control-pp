@@ -65,7 +65,7 @@ public void OnConfigsExecuted()
 		}
 
 		hDisplayMenu = new Menu(MenuHandle);
-		hDisplayMenu.SetTitle("%s", "Menu Title");
+		hDisplayMenu.SetTitle("%t", "Menu Title");
 		hDisplayMenu.AddItem("5", "5");
 		hDisplayMenu.AddItem("10", "10");
 		hDisplayMenu.AddItem("15", "15");
@@ -132,7 +132,7 @@ public Action DonatePanel(int client, int args)
 
 public int MenuHandle(Menu menu, MenuAction action, int param1, int param2)
 {
-	switch(action)
+	switch (action)
 	{
 		case MenuAction_Select:
 		{
