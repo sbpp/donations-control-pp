@@ -85,9 +85,8 @@ public void HandleCvars(ConVar cvar, const char[] sOldValue, const char[] sNewVa
 		cv_bEnabled = view_as<bool>(iNewValue);
 		if (cv_bEnabled)
 			hAdvertTimer = CreateTimer(cv_fAdvertTime, TimerAdvertisement, _, TIMER_REPEAT);
-		else {
+		else
 			ClearTimer(hAdvertTimer);
-		}
 	}
 
 	if (cvar == hConVars[1])
@@ -101,9 +100,8 @@ public void HandleCvars(ConVar cvar, const char[] sOldValue, const char[] sNewVa
 		cv_bAdvertStatus = view_as<bool>(iNewValue);
 		if (cv_bAdvertStatus)
 			hAdvertTimer = CreateTimer(cv_fAdvertTime, TimerAdvertisement, _, TIMER_REPEAT);
-		else {
+		else
 			ClearTimer(hAdvertTimer);
-		}
 	}
 
 	if (cvar == hConVars[4])
@@ -166,9 +164,8 @@ void OpenDonationWindow(int client, int amount)
 
 		ShowVGUIPanel(client, "info", kv);
 		kv.Close();
-	} else {
+	} else
 		PrintToChat(client, "Minimum amount is 5 dollars");
-	}
 }
 
 void ClearTimer(Handle hTimer)
@@ -182,5 +179,5 @@ void ClearTimer(Handle hTimer)
 
 public Action TimerAdvertisement(Handle timer)
 {
-	PrintToChatAll("%s", "Advertisement Message");
+	PrintToChatAll("%t", "Advertisement Message");
 }
