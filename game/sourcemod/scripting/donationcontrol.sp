@@ -165,7 +165,7 @@ void OpenDonationWindow(int client, int amount)
 		ShowVGUIPanel(client, "info", kv);
 		kv.Close();
 	} else
-		PrintToChat(client, "Minimum amount is 5 dollars");
+		PrintToChat(client, "%t", "Minimum Amount", cv_iMinimumAmount);
 }
 
 void ClearTimer(Handle hTimer)
