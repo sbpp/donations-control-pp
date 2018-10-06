@@ -24,6 +24,7 @@ before_script:
   - tar -xzf sourcemod-$SOURCEMOD-linux.tar.gz
   - cd addons/sourcemod/scripting/
   - chmod +x spcomp
-
+  - chmod 755 sbpp_donations.sp
+  
 script:
   - ./compile.sh sbpp_donations.sp
