@@ -1,0 +1,30 @@
+#Use the new container-based infrastructure
+sudo: false
+language: sourcepawn
+
+#Install some apt packages needed for spcomp
+addons:
+  apt_packages:
+    - lib32stdc++6
+
+matrix:
+  allow_failures:
+    - env: SOURCEMOD=1.10
+
+#Set the build environment
+env:
+  - SOURCEMOD=1.8
+  - SOURCEMOD=1.9
+  - SOURCEMOD=1.10
+
+#And compile!
+before_script:
+  - wget "http://www.sourcemod.net/latest.php?version=$SOURCEMOD&os=linux" -O game/sourcemod-$SOURCEMOD-linux.tar.gz
+  - cd game
+  - tar -xzf sourcemod-$SOURCEMOD-linux.tar.gz
+  - cd addons/sourcemod/scripting/
+  - wget https://bitbucket.org/GoD_Tony/updater/raw/53ebb3e27e5a43bc46dc52dc0de76ac2fb48cd9e/include/updater.inc -O include/updater.inc
+  - chmod +x spcomp
+
+script:
+  - ./compile.sh sbpp_donations.sp

@@ -3,7 +3,6 @@
 #include <sourcemod>
 #include <sdktools>
 
-#define PLUGIN_NAME "Donations Control Plugin"
 #define PLUGIN_VERSION "1.0.1"
 
 ConVar hConVars[6];
@@ -16,20 +15,20 @@ int cv_iMinimumAmount;
 Menu hDisplayMenu;
 Handle hAdvertTimer;
 
-public Plugin myinfo = {
-	name 		= PLUGIN_NAME,
+public Plugin myinfo =
+{
+	name 		= "SourceBans++: Donation Plugin",
 	author 		= "Keith Warren (Drixevel), NineteenEleven & Sgt. Gremulock",
 	description = "Allows clients to donate via the Donations Control Panel script in-game (syntax updated by Sgt. Gremulock).",
 	version 	= PLUGIN_VERSION,
-	url 		= "http://www.drixevel.com/"
+	url 		= "https://github.com/sbpp/donations-control-pp"
 };
 
 public void OnPluginStart()
 {
-	LoadTranslations("common.phrases");
-	LoadTranslations("donationcontrol.phrases");
+	LoadTranslations("sbpp_donations.phrases");
 
-	CreateConVar("donations_control_version", PLUGIN_VERSION, PLUGIN_NAME, FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_DONTRECORD);
+	CreateConVar("donations_control_version", PLUGIN_VERSION, _, FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_DONTRECORD);
 	hConVars[0] = CreateConVar("sm_kpanel_enable", "1", "Enable or disable plugin", _, true, 0.0, true, 1.0);
 	hConVars[1] = CreateConVar("sm_kpanel_url", "https://website.com/donations", "URL to your Donations Control installation.");
 	hConVars[2] = CreateConVar("sm_kpanel_fullscreen", "1", "Enable or disable fullscreen windows", _, true, 0.0, true, 1.0);
